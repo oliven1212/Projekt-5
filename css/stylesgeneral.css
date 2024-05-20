@@ -38,10 +38,43 @@ header ellipse {
 .headerbackground{
     grid-area: hbackground;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: white;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fakeheader{
+    grid-area: hbackground;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .fakeheader a {
+    height: 50%;
+    text-decoration: none;
+
+}
+header .fakeheader a h3{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+    padding: 5px 15px ;
+    margin: auto;
 }
 #main{
 
+}
+#main .splitline{
+    width: 40%;
+    color: #3DCD58;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style:solid;
+    box-shadow: 0px 0px 3px #3dcd57;
 }
