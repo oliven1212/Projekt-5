@@ -3,3 +3,13 @@ header .fakeheader #headerlink1{
     border-radius: 20px;
     color: white;
 }
+#gallery{
+    background-color: red;
+    margin: 0 auto;
+    width: 80%;
+    height: 700px;
+    background: url("../pictures/index/Udklip.PNG") 0 0 no-repeat;
+    background-position: center; 
+    background-size: contain;
+
+}

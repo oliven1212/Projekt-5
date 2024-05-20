@@ -68,7 +68,7 @@ header .fakeheader a h3{
     margin: auto;
 }
 #main{
-
+grid-area: main;
 }
 #main .splitline{
     width: 40%;
