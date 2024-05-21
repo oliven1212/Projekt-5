@@ -14,6 +14,27 @@ body{
     "main"
     "footer";
 }
+h1{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+h2{
+    
+}
+h3{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    
+}
+p{
+    
+}
 header{
     grid-area: header;
     display: grid;
@@ -78,3 +99,54 @@ grid-area: main;
     border-style:solid;
     box-shadow: 0px 0px 3px #3dcd57;
 }
+
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "stack";
+    margin-top: 50px;
+}
+footer svg{
+    grid-area: stack;
+    height: 250px;
+    width: 100%;
+    margin-bottom: -10px;
+}
+footer ellipse {
+    fill:#ECECEC;
+    stroke: #b1b1b1;
+    stroke-width: 2px;
+}
+
+.footerinfo{
+    grid-area: stack;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "CI PO FU";
+    margin: 0px 10%;
+    margin-top: 50px;
+}
+footer h3, footer p{
+    text-align: center;
+}
+
+.iconbox{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.iconbox i{
+    margin: 0px 5px;
+    font-size: 50px;
+    color: #3dcd57;
+}
+
