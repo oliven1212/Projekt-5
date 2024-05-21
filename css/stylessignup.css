@@ -3,16 +3,7 @@ header .fakeheader #headerlink2{
     border-radius: 20px;
     color: white;
 }
-#main .banner{
-    grid-area: img;
-    width: 100%;
-    margin-bottom: 50px;
-}
-#errorName, #errorEmail, #errorPhone, #errorCompany{
-    display: none;
-    color: #ff2e2e;
-    font-size: 16px;
-}
+
 #main{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -22,11 +13,72 @@ header .fakeheader #headerlink2{
     "img img"
     "data info";
 }
+
+#main .banner{
+    grid-area: img;
+    width: auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    max-height: 250px;
+
+}
+@media(max-width: 1250px){
+    #main .banner{
+        display: none;
+    }
+
+}
+
 #main .data{
     grid-area: data;
-    margin: 0px 10%;
+    margin: 0px auto;
 }
+.data input{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 35px;
+
+}
+.data p{
+    margin-left: 20px;
+}
+#errorName, #errorEmail, #errorPhone, #errorCompany{
+    display: none;
+    color: #ff2e2e;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-top: 5px;
+
+}
+.data a{
+    display: flex;
+    background-color: #009dff;
+    width: 100px;
+    height: 50px;
+    border: black 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 40px;
+}
+.data a p{
+    text-align: center;
+    margin: auto;
+}
+
 #main .info{
     grid-area: info;
+    max-width: 350px;
+    margin:  auto;
+    padding: 10px;
     border-style: solid;
+    border-radius: 20px;
+}
+.info img{
+    width: 90%;
+    margin: 20px 5%;
+}
+.info h3{
+    margin: 0px;
 }
