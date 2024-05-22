@@ -1,55 +1,31 @@
-header .fakeheader #headerlink1{
+header .fakeheader #headerlink4{
     background-color: #42B4E6;
     border-radius: 20px;
     color: white;
 }
-#gallery{
-    background-color: red;
-    margin: 0 auto;
-    width: 80%;
-    height: 500px;
-    background: url("../pictures/index/Udklip.PNG") 0 0 no-repeat;
-    background-position: center; 
-    background-size: contain;
-    border-style: solid; /* remove border later*/
-
-}
-.calltoaction{
-    background-color: #42B4E6;
-    height: 100px;
-    width: 20%;
-    display:flex;
-    margin: 20px auto;
-    border-radius: 50px;
-    box-shadow: 0px 5px 20px #42B4E6;
-    justify-content: center;
-    text-decoration: none;
-
-}
-.calltoaction h2{
-    color: white;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: center;
-}
-.info{
-    background-color: #FFFFFA;
+#main{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 70px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
 
     grid-template-areas: 
-    "h2 img"
-    "p img";
-    margin: 0px 10%;
+    "titel"
+    "text"
+    "info";
 }
-.info .infoimg {
-    grid-area: img;
-    width: 100%;
-    background-size: contain;
+h1{
+    text-align: center;
+    grid-area: titel;
+}
+#main p{
+    margin: 20px 30%;
+}
 
-    border-color: #ff00b7;
-    border-style: solid;
+.info{
+    grid-area: info;
+    display: flex;
 
+}
+.info div{
+    width: 50%
 }

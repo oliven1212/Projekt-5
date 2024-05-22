@@ -7,7 +7,7 @@ body{
     background-color: #FFFFFA;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows:  160px  auto auto;
+    grid-template-rows:  160px  auto 240px;
 
     grid-template-areas: 
     "header"
@@ -108,6 +108,7 @@ header .fakeheader a h3{
 
 
 footer{
+    width: 100%;
     grid-area: footer;
     display: grid;
     grid-template-columns: auto;
@@ -115,7 +116,6 @@ footer{
 
     grid-template-areas: 
     "stack";
-    margin-top: 50px;
 
 }
 footer svg{

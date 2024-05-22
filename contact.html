@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/stylesgeneral.css">
-    <link rel="stylesheet" href="css/stylesindex.css">
+    <link rel="stylesheet" href="css/stylescontact.css">
     <script src="javascript/javascriptgeneral.js" defer></script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +12,25 @@
 </head>
 
 <body>
-    <header>
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <ellipse rx="120%" ry="100" cx="50%" cy="99"/> <!-- Change rx to increase/decrese curve-->
-          </svg> 
-        <div class="headerbackground"></div>
-        <div class="fakeheader">
-            <a href="index.html"><img src="pictures/index/LogoSmall.png" style="height: 100%;" > </a>
-            <a href="index.html"><h3 id="headerlink1">Forside</h3></a>
-            <a href="index.html" ><h3 id="headerlink2">Tilmeld</h3></a>
-            <a href="index.html" ><h3 id="headerlink3">Aktiviteter</h3></a>
-            <a href="index.html" ><h3 id="headerlink4">Kontakt</h3></a>
-        </div>
-    </header>
+    <header id="header"></header>
     <div id="main">
-        <div id="gallery"></div>
-<hr class="splitline">
+        <h1>Kontaktinformationer</h1>
+        <p style="grid-area: text;">Ved spørgsmål angående 
+            konferencen kan man kontakte 
+            os over telefon eller email som 
+            står på højre side.
+            
+            </p>
+        <div class="info">
+            <div>
+                <p>Telefonen er åben alle hverdagene fra <br>kl. 8-16.<br><br>Tlf: +45 35 15 90 00</p>
+            </div>
+            <div>
+                <p>Email er åben alle hverdage fra <br>kl. 8-16<br><br>LKsupport@lk.dk</p>
+            </div>
+        </div>
     </div>
-
+<footer id="footer"></footer>    
 </body>
 
 </html>
