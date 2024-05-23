@@ -154,6 +154,9 @@ footer .iconbox i{
     font-size: 50px;
     color: #3dcd57;
 }
+.hamburger{
+    display: none;
+}
 
 @media(max-width: 850px){
     #header {
@@ -163,6 +166,7 @@ footer .iconbox i{
     .hamburger  {
         overflow: auto;
         position: relative;
+        display: block;
     }
     
     /* Hide the links inside the navigation menu (except for logo/home) */
