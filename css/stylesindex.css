@@ -23,6 +23,10 @@ h1 {
     height: 50px;
     background-color: #1be70d;
     border-style: solid;
+    cursor: pointer;
+}
+#gallery a:hover{
+    
 }
 .calltoaction{
     background-color: #42B4E6;
