@@ -155,3 +155,54 @@ footer .iconbox i{
     color: #3dcd57;
 }
 
+@media(max-width: 850px){
+    #header {
+        display: none;
+    }
+/* Style the navigation menu */
+.hamburger  {
+    overflow: auto;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .hamburger #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .hamburger a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .hamburger a.icon {
+    background: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .hamburger a:hover {
+    background-color: #3dcd57;
+    color: rgb(0, 0, 0);
+  }
+
+    /* Show the menu and add green background when .show-menu is added */
+    .hamburger.show-menu {
+        background-color: #3dcd57;
+    }
+    
+    .hamburger.show-menu #myLinks {
+    display: block;
+}
+    
+  
+    
+}
