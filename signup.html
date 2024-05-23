@@ -9,34 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="icon" href="pictures/general/logo.png"> <!--sæt logo ind senere -->
+    <script src="javascript/signup.js" defer></script> 
 </head>
 
 <body>
     <header id="header"></header>
     <div id="main">
-        <img src="pictures/Logo.png" alt="big picture" class="banner">
         <div class="data">
             <h1>Tilmeldingsformular</h1>
             <br>
             <p>*Fulde navn</p>
-            <input type="text">
+            <input type="text" id="nametext">
             <p id="errorName">Fejl i navnet</p>
             <br><br>
             <p>Email</p>
-            <input type="text">
+            <input type="text" id="emailtext">
             <p id="errorEmail">Ugyldig email</p>
             <br><br>
             <p>*Telefonnummer</p>
-            <input type="text">
-            <p id="errorPhone">Fejl i telefonnummeret, husk lande nummer i starten, danmarks er +45</p>
+            <input type="text" id="mobiltext">
+            <p id="errorPhone">Ugyldigt telefonnummer, bemærk at det skal indeholde 8 tal</p>
             <br><br>
             <p>Firma</p>
-            <input type="text">
+            <input type="text" id="firmatext">
             <p id="errorCompany">Fejl i navnet</p>
             <br><br>
             <p style="font-size: 16px; color: #666666; margin-left: 20px;">* felter skal udfyldes</p>
             <br><br>
-            <a onclick="something()"><p>Tilmeld</p></a>
+            <a onclick="confirmation()"><p>Tilmeld</p></a>
 
         </div>
         <div class="info">
@@ -52,7 +52,10 @@
             <br><br>
             <p>Ved yderlige spørgsmål kontakt os på:<br> Tlf: +45 35 15 90 00</p>
         </div>
-    </div>
+        <div id="succesbox">
+            <p>Din tilmelding er blevet bekræftet</p>
+        </div>
+        
 
 <footer id="footer"></footer>
 </body>

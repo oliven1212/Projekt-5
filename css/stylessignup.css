@@ -14,20 +14,6 @@ header .fakeheader #headerlink2{
     "data info";
 }
 
-#main .banner{
-    grid-area: img;
-    width: auto;
-    margin: 0px auto;
-    margin-bottom: 50px;
-    max-height: 250px;
-
-}
-@media(max-width: 1250px){
-    #main .banner{
-        display: none;
-    }
-
-}
 
 #main .data{
     grid-area: data;
@@ -81,4 +67,22 @@ header .fakeheader #headerlink2{
 }
 .info h3{
     margin: 0px;
+}
+.confirmationBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #009dff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.confirmationBox p {
+    margin: 0;
+    text-align: center;
 }
