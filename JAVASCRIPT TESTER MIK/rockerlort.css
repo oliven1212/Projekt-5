@@ -62,8 +62,8 @@ footer {
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
-    color: rgb(255, 225, 0);
+    background-color: #ffe100;
+    color: rgb(0, 0, 0);
   }
   
   /* Style the active link (or home/logo) */
