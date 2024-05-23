@@ -14,19 +14,19 @@ h1 {
     background: url("../pictures/index/shrek.jpg") 0 0 no-repeat;
     background-position: center; 
     background-size: contain;
-    border-style: solid; /* remove border later*/
-
+    display: flex;
 }
 #gallery a{
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #1be70d;
-    border-style: solid;
     cursor: pointer;
+    margin: auto;
 }
-#gallery a:hover{
-    
+.fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right{
+    font-size: 100px;  
+    color: #000000;
+    text-shadow: 0px 0px 5px #ffffffa0;
+}
+.fa-solid.fa-chevron-left:hover, .fa-solid.fa-chevron-right:hover{
+    color: #3f3f3f;
 }
 .calltoaction{
     background-color: #42B4E6;
