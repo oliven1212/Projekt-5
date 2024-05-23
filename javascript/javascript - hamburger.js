@@ -1,6 +1,6 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    var hamburger = document.querySelector('.hamburger');
+function burgerShow() {
+    let x = document.getElementById("myLinks");
+    let hamburger = document.querySelector('.hamburger');
     if (x.style.display === "block") {
         x.style.display = "none";
         hamburger.classList.remove('show-menu');

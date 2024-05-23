@@ -86,3 +86,12 @@ header .fakeheader #headerlink2{
     margin: 0;
     text-align: center;
 }
+#succesbox{
+    display: none;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+#succesbox p{
+    margin: 0px;
+}
