@@ -24,6 +24,7 @@ header .fakeheader #headerlink2{
     border-style: solid;
     border-color: gray;
     margin-left: 35px;
+    padding: 3px;
 
 }
 .data p{
