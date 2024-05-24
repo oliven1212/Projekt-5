@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/stylesactivities.css">
     <script src="javascript/javascriptgeneral.js" defer></script> 
     <script src="javascript/javascript - hamburger.js" defer></script>
+    <script src="javascript/javascript - activities.js" defer></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
@@ -29,36 +31,26 @@
         <div class="container">
             <div class="info">
                 <h1>Aktivitets kort</h1>
-                <p>Meget kort beskrivelse af kort</p>
+                <p style="margin-left: 20px;">Man kan bruge dette kort til at navigere konferencen</p>
                 <br><br><br>
                 <p>Tryk på en begivenhed for at det bliver highlighted</p>
                 <div id="checkboxList">
                     <div id="column1" style="grid-area: C1;">
-                        <input type="checkbox" onclick="update(0)" id="checkbox0">
-                        <label>fancy fancy</label><br>
-                        <input type="checkbox" onclick="update(1)" id="checkbox1">
-                        <label>fancy </label><br>
-                        <input type="checkbox" onclick="update(0)" id="checkbox0">
-                        <label>fancy fancy</label><br>
-                        <input type="checkbox" onclick="update(1)" id="checkbox1">
-                        <label>fancy </label>
                     </div>
                     <div id="column2" style="grid-area: C2;">
-                        <input type="checkbox" onclick="update(0)" id="checkbox0">
-                        <label>fancy fancy</label><br>
-                        <input type="checkbox" onclick="update(1)" id="checkbox1">
-                        <label>fancy </label><br>
-                        <input type="checkbox" onclick="update(0)" id="checkbox0">
-                        <label>fancy fancy</label><br>
-                        <input type="checkbox" onclick="update(1)" id="checkbox1">
-                        <label>fancy </label>
                     </div>
                 </div>
             </div>
-            <div class="map"></div>
+            <div class="map">
+                <div id="innermap">
+                </div>
+            </div>
         </div>
         <br>
-        <hr class="splitline">
+        <hr class="splitline"><br>
+        <h1 style="text-align: center;">El Kon aktiviteter</h1>
+        <div id="activitycardlist">
+        </div>
     </div>
 <footer id="footer"></footer>
 </body>
