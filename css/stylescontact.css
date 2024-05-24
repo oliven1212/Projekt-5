@@ -14,7 +14,7 @@ header .fakeheader #headerlink4{
     "info";
 }
 h1{
-    text-align: center;
+    text-align: left;
     grid-area: titel;
 }
 #main p{
@@ -28,4 +28,29 @@ h1{
 }
 .info div{
     width: 50%
+}
+
+.tax {
+    text-align: left;
+    
+}
+.list {
+    margin: auto;
+    width: 95%;
+    height: 95%;
+    
+}
+.list img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.cinfo {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "p1 p2 p3"
+    "t1 t2 t3";
 }
