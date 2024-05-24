@@ -6,12 +6,17 @@ header .fakeheader #headerlink4{
 #main{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
 
     grid-template-areas: 
     "titel"
     "text"
+    "split"
     "info";
+}
+.splitline{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 h1{
     text-align: left;
@@ -19,20 +24,13 @@ h1{
 }
 #main p{
     margin: 20px 30%;
-}
-
-.info{
-    grid-area: info;
-    display: flex;
-
-}
-.info div{
-    width: 50%
-}
-
-.tax {
     text-align: left;
-    
+}
+
+.column{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
 }
 .list {
     margin: auto;
@@ -47,8 +45,9 @@ h1{
 }
 
 .cinfo {
+    grid-area: info;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: 
     "p1 p2 p3"
