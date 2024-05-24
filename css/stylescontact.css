@@ -23,7 +23,6 @@ h1{
     grid-area: titel;
 }
 #main p{
-    margin: 20px 20%;
     text-align: left;
 }
 
@@ -31,6 +30,9 @@ h1{
     width: 50%;
     margin: auto;
     margin-top: 50px;
+}
+.column p{
+    margin: 0px 20%;
 }
 .list {
     margin: auto;
@@ -52,4 +54,7 @@ h1{
     grid-template-areas: 
     "p1 p2 p3"
     "t1 t2 t3";
+}
+.ct{
+    margin-left: 10px;
 }
