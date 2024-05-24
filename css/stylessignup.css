@@ -40,14 +40,14 @@ header .fakeheader #headerlink2{
 }
 .data a{
     display: flex;
-    background-color: #009dff;
+    background-color: #46f165;
     width: 100px;
     height: 50px;
     border: black 1px solid;
     border-radius: 10px;
     cursor: pointer;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 65px;
 }
 .data a p{
     text-align: center;
@@ -69,24 +69,7 @@ header .fakeheader #headerlink2{
 .info h3{
     margin: 0px;
 }
-.confirmationBox {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 2px solid #009dff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
 
-.confirmationBox p {
-    margin: 0;
-    text-align: center;
-}
 #succesbox{
     display: none;
     border: black 2px solid;

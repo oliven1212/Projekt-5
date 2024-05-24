@@ -1,4 +1,4 @@
-let gallerylist = ["elkon","shrek","penge","drage"];
+let gallerylist = ["elkon","jyskebank","vindmøller","vr"];
 let position = 0;
 function forward (){
     if(position<gallerylist.length-1){

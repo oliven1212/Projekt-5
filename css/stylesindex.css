@@ -28,25 +28,32 @@ h1 {
 .fa-solid.fa-chevron-left:hover, .fa-solid.fa-chevron-right:hover{
     color: #3f3f3f;
 }
-.calltoaction{
-    background-color: #42B4E6;
-    height: 100px;
-    width: 25%;
-    display:flex;
+.calltoaction a{
+    background-color: #3dcd58;
+    width: 120px;
+    display:block;
     margin: 20px auto;
-    padding: 0px 10px;
-    border-radius: 50px;
-    box-shadow: 0px 5px 20px #42B4E6;
-    justify-content: center;
-    text-decoration: none;
-}
-.calltoaction h2{
+    padding: 20px 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #2bff52b9;
     color: white;
     font-size: 30px;
+    letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     font-style: italic;
     text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
 }
+.calltoaction a:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 100px #00ff2f;
+    text-shadow: 0px 0px 4px #ffffff;
+
+}
+
+
 .info{
     background-color: #FFFFFA;
     display: grid;
