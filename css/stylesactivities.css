@@ -12,6 +12,7 @@ header .fakeheader #headerlink3{
     "info map";
 }
 
+
 .info{
     grid-area: info;
 
@@ -73,6 +74,20 @@ header .fakeheader #headerlink3{
     height: 69px;
     background-color: #42b5e68a;
     box-shadow: 0px 0px 10px #30b3eb;
+}
+@media(max-width: 850px){
+    .container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    
+        grid-template-areas: 
+        "info"
+        "map";
+    }
+    .map{
+        margin-top: 30px;
+    }
+    
 }
 
 #activitycardlist{
