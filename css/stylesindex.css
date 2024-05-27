@@ -169,6 +169,7 @@ h1 {
         grid-template-areas: 
         "h2"
         "p"
+        "p2"
         "vid";
     }
     
