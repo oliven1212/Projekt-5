@@ -143,6 +143,7 @@ header .fakeheader #headerlink3{
     min-height: 100px;
     margin: 0px;
     transition: 0.5s;
+    margin-top: -20px;
 }
 
 #card:hover #text, #card:hover{
