@@ -80,7 +80,7 @@ header .fakeheader #headerlink3{
     flex-wrap: wrap;
 }
 #card{
-    border-style: solid;
+    border-style: none;
     border-radius: 10px;
     display: grid;
     grid-template-columns: auto;
@@ -91,31 +91,37 @@ header .fakeheader #headerlink3{
     width: 300px;
     min-height: 200px;
     margin: 50px auto;
+    background-color: #0015ff;
+
 }
 #card div{
     grid-area: pic;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    overflow: hidden;
 }
-#card div h3{
-border-style: solid;
-border-radius: 5px;
-padding: 10px 30px;
-background-color: #b7eaff;
-font-style: normal;
-margin-top: -30px;
-margin-left: -30px;
-margin-right: auto;
-margin-bottom: auto;
+#card h2{
+    grid-area: text;
+    border-style: none;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 30px;
+    background-color: #0015ff;
+    color: white;
+    font-style: normal;
+    min-height: 100px;
+    margin: 0px;
+    transition: 0.5s;
+
 }
+
 #card img{
-    grid-area: pic;
     width: 100%;
-    margin-top: -1px;
     border-radius: 5px 5px 0px 0px;
     margin: 0px auto;
+    transition: 0.5s;
 }
-#card p{
-    margin: 10px 10px;
+
+#card:hover h2{
+    background-color: #30b3eb;
+}
+#card:hover img{
+    transform: scale(1.2);
 }
