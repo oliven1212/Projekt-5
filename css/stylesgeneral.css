@@ -217,7 +217,9 @@ footer .iconbox i{
         .hamburger.show-menu #myLinks {
         display: block;
 }
-    
+    #footer{
+        overflow: hidden;
+    }
   
     
 }
