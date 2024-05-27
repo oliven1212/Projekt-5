@@ -79,8 +79,6 @@ h1 {
 }
 .info h2{
     font-size: 30px;
-<<<<<<< Updated upstream
-=======
 }
 #activitycardlist{
     display: flex;
@@ -151,5 +149,15 @@ h1 {
 }
 #action:hover{
     background-color: #30b3eb;
->>>>>>> Stashed changes
+}
+@media(max-width: 850px){
+    .info{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "h2"
+        "p"
+        "vid";
+    }
+    
 }
