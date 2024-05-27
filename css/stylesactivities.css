@@ -91,7 +91,7 @@ header .fakeheader #headerlink3{
     width: 300px;
     min-height: 200px;
     margin: 50px auto;
-    background-color: #0015ff;
+    background-color: #008cff;
 
 }
 #card div{
@@ -103,7 +103,7 @@ header .fakeheader #headerlink3{
     border-style: none;
     border-radius: 0px 0px 5px 5px;
     padding: 10px 30px;
-    background-color: #0015ff;
+    background-color: #008cff;
     color: white;
     font-style: normal;
     min-height: 100px;
