@@ -11,10 +11,10 @@ function confirmation() {
         if(document.getElementById(text[i]).value=="")
         {
             errorCount++;
-            console.log(document.getElementById(error[i]).style.display="block");
+            document.getElementById(error[i]).style.display="block";
         }else
         {
-            console.log(document.getElementById(error[i]).style.display="none");
+            document.getElementById(error[i]).style.display="none";
         }
     }
 
