@@ -106,6 +106,7 @@ header .fakeheader #headerlink3{
     background-color: #008cff;
     color: white;
     font-style: normal;
+    font-size:large;
     min-height: 100px;
     margin: 0px;
     transition: 0.5s;
