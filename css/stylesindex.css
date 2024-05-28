@@ -96,7 +96,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 }
-#card{
+.card{
     border-style: none;
     border-radius: 10px;
     display: grid;
@@ -111,11 +111,11 @@ h1 {
     background-color: #008cff;
 
 }
-#card div{
+.card div{
     grid-area: pic;
     overflow: hidden;
 }
-#card h2{
+.card h2{
     grid-area: text;
     border-style: none;
     border-radius: 0px 0px 5px 5px;
@@ -129,17 +129,17 @@ h1 {
 
 }
 
-#card img{
+.card img{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
     margin: 0px auto;
     transition: 0.5s;
 }
 
-#card:hover h2{
+.card:hover h2{
     background-color: #30b3eb;
 }
-#card:hover img{
+.card:hover img{
     transform: scale(1.2);
 }
 #action{
