@@ -2,8 +2,10 @@ let gallerylist = ["elkon","bill","elkonhype","mes","hjem"];
 let position = 0;
 function forward (){
     if(position<gallerylist.length-1){
-        position++;    
-        document.getElementById("gallery").style.backgroundImage = "url(pictures/index/"+gallerylist[position]+".jpg)";
+        for (let i = 0; i < 1; i++) {
+            position++;    
+            document.getElementById("gallery").style.backgroundImage = "url(pictures/index/"+gallerylist[position]+".jpg)";
+        }
     }else{
         position = 0;
         document.getElementById("gallery").style.backgroundImage = "url(pictures/index/"+gallerylist[position]+".jpg)";
