@@ -4,9 +4,10 @@ const picture = ["præsentation","installationras","installationrass","præsenta
 
 let column = 1;
 for (let i = 0; i < activities.length; i++) {
-    document.getElementById("column"+column).innerHTML += '<input type="checkbox" onclick="update('+i+')" id="checkbox0"><label>'+activities[i]+'</label><br>';
-    document.getElementById("innermap").innerHTML += '<div id="highlight'+i+'" style="grid-area: A'+i+';"></div>';
-    document.getElementById("highlight"+i).style.display = "none";
+    document.getElementById("column"+column).innerHTML += '<input type="checkbox" onclick="update('+i+')" id="checkbox'+i+'"><label>'+activities[i]+'</label><br>';
+    document.getElementById("innermap").innerHTML += '<a id="highlight'+i+'" onclick="update('+i+')" class="stand" style="grid-area: A'+i+';"><p>A'+i+'</p></a>';
+    document.getElementById("highlight"+i).style.boxShadow = "none";
+
         if(column == 1){
             column = 2;
         }else {
@@ -14,13 +15,18 @@ for (let i = 0; i < activities.length; i++) {
         }
 }
 function update (id){
-    if(document.getElementById("highlight"+id).style.display == "none"){
-        document.getElementById("highlight"+id).style.display = "block";
+    if(document.getElementById("highlight"+id).style.boxShadow == "none"){
+        document.getElementById("highlight"+id).style.boxShadow = "0px 0px 10px #30b3eb";
+        document.getElementById("checkbox"+id).checked = true;
+        document.getElementById("card"+id).style.boxShadow = "0px 0px 40px #008cff"
     }else {
-        document.getElementById("highlight"+id).style.display = "none";
+        document.getElementById("highlight"+id).style.boxShadow = "none";
+        document.getElementById("checkbox"+id).checked = false;
+        document.getElementById("card"+id).style.boxShadow = "none";
     }
 }
 
 for (let i = 0; i < activities.length; i++) {
-    document.getElementById("activitycardlist").innerHTML += '<div id="card"><div><img src="pictures/activities/'+picture[i]+'.jpg" alt="billed af '+activities[i]+'"></div><div id="text"><h2>'+activities[i]+'</h2><p>'+beskrivelser[i]+'<p><div></div>';
+    document.getElementById("activitycardlist").innerHTML += '<div id="card'+i+'" class="card"><div><img src="pictures/activities/'+picture[i]+'.jpg" alt="billed af '+activities[i]+'"></div><div id="text"><h2>'+activities[i]+'</h2><p>'+beskrivelser[i]+'<p><div></div>';
+    document.getElementById("card"+i).style.boxShadow = "none";
 }
