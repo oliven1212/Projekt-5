@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/stylesgeneral.css">
+    <link rel="stylesheet" href="css/stylessignup.css">
+    <script src="javascript/javascriptGeneral.js" defer></script> 
+    <script src="javascript/javascriptHamburger.js" defer></script>
+    <script src="javascript/javascriptSignup.js" defer></script> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="hamburger">
+        <div id="myLinks"></div>
+        <a class="icon" onclick="burgerShow()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="main">
+
+        <div class="data">
+            <h1>Tilmeldingsformular</h1>
+            <br>
+            <p id="toptext">Velkommen til ELKONs tilmeldingsformular! Udfyld venligst dine oplysninger nedenfor. Vi ser frem til at byde dig velkommen til vores begivenhed!</p>
+            <br><br>
+            <p>*Fulde navn</p>
+            <input type="text" id="nametext">
+            <p id="errorName">Fejl i navnet</p>
+            <br><br>
+            <p>Email</p>
+            <input type="text" id="emailtext">
+            <p id="errorEmail">Ugyldig email</p>
+            <br><br>
+            <p>*Telefonnummer</p>
+            <input type="text" id="mobiltext">
+            <p id="errorPhone">Ugyldigt telefonnummer, bemærk at det skal indeholde 8 tal</p>
+            <br><br>
+            <p>Firma</p>
+            <input type="text" id="firmatext">
+            <p id="errorCompany">Fejl i navnet</p>
+            <br><br>
+            <p style="font-size: 16px; color: #666666; margin-left: 20px;">* felter skal udfyldes</p>
+            <br><br>
+            <a onclick="confirmation()"><p>Tilmeld</p></a><br>
+            <div id="succesbox">
+                <p>Din tilmelding er blevet bekræftet</p>
+            </div>
+        </div>
+        <div class="info">
+            <a href="index.html"><img src="pictures/general/LogoSmall.png" alt="picture of logo"></a>
+            <h3>Adresse</h3>
+            <p>Mageløs 8, 5100 Odense C</p>
+            <br><br>
+            <h3>Dato</h3>
+            <p>6. juni → 8. juni 2024</p>            
+            <br><br>
+            <h3>Tidsrum</h3>
+            <p>8:30 → 18:00</p>            
+            <br><br>
+            <p>Ved yderlige spørgsmål kontakt os på:<br> Tlf: +45 35 15 90 00</p>
+        </div>
+    </div>
+
+<footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+header .fakeheader #headerlink2{
+    background-color: #42B4E6;
+    border-radius: 20px;
+    color: white;
+}
+
+#main{
+    display: grid;
+    margin-left: 20%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "data info";
+}
+@media(max-width: 850px){
+    #main{
+        margin-left: 10% ;
+    }
+}
+
+#main .data{
+    grid-area: data;
+    margin: 0px auto;
+}
+.data input{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 35px;
+    padding: 3px;
+
+}
+.data p{
+    margin-left: 20px;
+}
+#errorName, #errorEmail, #errorPhone, #errorCompany{
+    display: none;
+    color: #ff2e2e;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-top: 5px;
+
+}
+.data a{
+    display: flex;
+    background-color: #46f165;
+    width: 100px;
+    height: 50px;
+    border: black 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 65px;
+}
+.data a p{
+    text-align: center;
+    margin: auto;
+}
+
+#main .info{
+    grid-area: info;
+    max-width: 350px;
+    margin:  auto;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 20px;
+}
+.info img{
+    width: 90%;
+    margin: 20px 5%;
+}
+.info h3{
+    margin: 0px;
+}
+
+#succesbox{
+    display: none;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+#succesbox p{
+    margin: 0px;
+}
+#toptext{
+    display: block;
+    width: 50%;
+}
+h1{
+    
+}

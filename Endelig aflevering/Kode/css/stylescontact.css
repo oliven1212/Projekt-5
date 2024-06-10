@@ -1,0 +1,60 @@
+header .fakeheader #headerlink4{
+    background-color: #42B4E6;
+    border-radius: 20px;
+    color: white;
+}
+#main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: 
+    "titel"
+    "text"
+    "split"
+    "info";
+}
+.splitline{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1{
+    text-align: left;
+    grid-area: titel;
+}
+#main p{
+    text-align: left;
+}
+
+.column{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.column p{
+    margin: 0px 20%;
+}
+.list {
+    margin: auto;
+    width: 95%;
+    height: 95%;
+    
+}
+.list img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.cinfo {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "p1 p2 p3"
+    "t1 t2 t3";
+}
+.ct{
+    margin-left: 10px;
+}

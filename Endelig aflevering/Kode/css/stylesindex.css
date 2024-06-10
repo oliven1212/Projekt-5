@@ -1,0 +1,176 @@
+header .fakeheader #headerlink1{
+    background-color: #42B4E6;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+#gallery{
+    background-color: red;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background: url("../pictures/index/elkon.jpg") 0 0 no-repeat;
+    background-position: center; 
+    background-size: contain;
+    display: flex;
+}
+#gallery a{
+    cursor: pointer;
+    margin: auto;
+}
+.fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right{
+    font-size: 100px;  
+    color: #000000;
+    text-shadow: 0px 0px 5px #ffffffa0;
+}
+.fa-solid.fa-chevron-left:hover, .fa-solid.fa-chevron-right:hover{
+    color: #3f3f3f;
+}
+.calltoaction a{
+    background-color: #3dcd58;
+    width: 120px;
+    display:block;
+    margin: 20px auto;
+    padding: 20px 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #2bff52b9;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.calltoaction a:hover{
+    color: #ffffff;
+    box-shadow: 0px 0px 100px #00ff2f;
+    text-shadow: 0px 0px 4px #ffffff;
+
+}
+
+
+.info{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px auto;
+
+    grid-template-areas: 
+    "h2 vid"
+    "p vid"
+    "p2 vid";
+    align-items: center;
+}
+.info .infovid {
+    grid-area: vid;
+    width: 100%;
+    background-size: contain;
+}
+.info p, .info h2{
+    margin: 10px 10%;
+    padding: 10px;
+}
+.info h2{
+    font-size: 30px;
+}
+
+
+
+.ex{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#activitycardlist{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    border-style: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "pic"
+    "text";
+    width: 300px;
+    min-height: 200px;
+    margin: 50px auto;
+    background-color: #008cff;
+
+}
+.card div{
+    grid-area: pic;
+    overflow: hidden;
+}
+.card h2{
+    grid-area: text;
+    border-style: none;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 30px;
+    background-color: #008cff;
+    color: white;
+    font-style: normal;
+    min-height: 100px;
+    margin: 0px;
+    transition: 0.5s;
+
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px auto;
+    transition: 0.5s;
+}
+
+.card:hover h2{
+    background-color: #30b3eb;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+#action{
+    border-style: none;
+    border-radius: 10px;
+    display: flex;
+    width: 300px;
+    min-height: 200px;
+    margin: 50px auto;
+    background-color: #008cff;
+    text-decoration: none;
+    padding: 20px;
+
+}
+#action h1{
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+#action:hover{
+    background-color: #30b3eb;
+}
+@media(max-width: 850px){
+    .info{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "h2"
+        "p"
+        "p2"
+        "vid";
+    }
+    
+}

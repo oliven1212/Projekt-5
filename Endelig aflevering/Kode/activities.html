@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/stylesgeneral.css">
+    <link rel="stylesheet" href="css/stylesactivities.css">
+    <script src="javascript/javascriptGeneral.js" defer></script> 
+    <script src="javascript/javascriptHamburger.js" defer></script>
+    <script src="javascript/javascriptActivities.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="icon" href="pictures/general/logo.png"> <!--sæt logo ind senere -->
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="hamburger">
+        <div id="myLinks"></div>
+        <a class="icon" onclick="burgerShow()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="main">
+        <div class="container">
+            <div class="info">
+                <h1>Aktivitets kort</h1>
+                <p style="margin-left: 20px;">Dette kort kan bruges til at navigere rundt under konferencen.
+                Længere nede på siden kan du danne dig et overblik over de forskellige aktiviteter som du kan deltage i.</p>
+                <br><br><br>
+                <p>Tryk på en begivenhed og få den fremhævet på kortet.</p>
+                <div id="checkboxList">
+                    <div id="column1" style="grid-area: C1;">
+                    </div>
+                    <div id="column2" style="grid-area: C2;">
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <div id="innermap">
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr class="splitline"><br>
+        <h1 style="text-align: center;">ELKON aktiviteter</h1>
+        <div id="activitycardlist">
+        </div>
+    </div>
+<footer id="footer"></footer>
+</body>
+
+</html>
