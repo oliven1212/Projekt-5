@@ -57,13 +57,13 @@ header{
     "hbackground";
 }
 
-header svg{
+svg{
     grid-area: hbackground;
     height: 130px;
     width: 100%;
     margin-top: 00px;
 }
-header ellipse {
+ellipse {
     fill:white;
     stroke: black;
     stroke-width: 2px;
